@@ -1,0 +1,556 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@700&family=Nunito+Sans:opsz,wght@6..12,300&family=Roboto+Condensed:ital@1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Burned&family=Tilt+Neon&family=Varela+Round&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header img {
+    margin-left: 100px;
+}
+
+header ul {
+    display: flex;
+    list-style-type: none;
+    margin-left: 200px;
+}
+
+header li {
+    width: 200px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Div de Apresentação */
+.apresentacao {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 400px;
+}
+
+.apresentacao button {
+    margin: 0 0 0 20px;
+}
+
+.img_topo {
+    margin-right: -10%;
+    width: 200px;
+    height: 200px;
+
+
+}
+
+.texto_principal {
+    margin: 10px;
+}
+
+.texto_principal h2 {
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.texto_principal h1 {
+    font-family: "Zilla Slab", serif;
+    font-weight: 200;
+    font-style: normal;
+    margin: -30px;
+    font-size: 120px;
+    text-transform: uppercase;
+}
+
+.texto_principal .text_sec {
+    margin: 20px 0 20px 0;
+    text-transform: lowercase;
+    font-family: cursive;
+
+}
+
+/* div como montar */
+.como_montar {
+    color: rgba(255, 255, 255, 0.899);
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(2, 62, 2, 0.689);
+    height: 600px;
+}
+
+.como_montar h2 {
+    font-family: "Zilla Slab", serif;
+    font-weight: 200;
+    font-style: normal;
+    margin: -30px 0 0 0;
+    font-size: 72px;
+    text-transform: uppercase;
+    width: 600px;
+}
+
+.como_montar_texto {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 120px;
+}
+
+.como_montar h3 {
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+    font-size: 38px;
+}
+
+.como_montar p {
+    margin: 20px 0 20px 0;
+    font-size: 22px;
+    width: 420px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 40px;
+}
+
+.terrario_butao_montar {
+    background-color: rgba(130, 171, 25, 0.922);
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    border: none;
+    height: 70px;
+    width: 310px;
+    border-radius: 50px;
+    font-size: 25px;
+}
+
+.como_montar_texto {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.imagem-como-montar img {
+    margin: 200px 200px 200px 200px;
+    width: 350px;
+    height: 450px;
+    transform: scale(1.5);
+    transform-origin: left;
+}
+
+/* PASSOS */
+
+.passos {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 650px;
+}
+
+.passos_texto {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    margin-top: 120px;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.passo {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.passo h4 {
+    font-family: "Zilla Slab", serif;
+    font-weight: 200;
+    font-style: normal;
+    margin: 0;
+    display: flex;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.passo p {
+    font-family: cursive;
+    margin: 0;
+    font-size: 18px;
+    width: 260px;
+}
+
+/* DEPOIMENTOS JS*/
+.depoimentos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.depoimentos-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.depoimento {
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.depoimentos img {
+    width: 100%;
+    width: 350px;
+    height: 450px;
+}
+
+#prev-button,
+#next-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+}
+
+button .img_seta {
+    position: absolute;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#prev-button {
+    left: 10px;
+}
+
+#next-button {
+    right: 10px;
+}
+
+.depoimento {
+    margin-top: 18em;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.depoimento h4 {
+    width: 300px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+.depoimento p {
+    font-size: 20px;
+    margin: 20px;
+    float: right;
+}
+
+.depoimento_2 {
+    margin-top: 40em;
+}
+
+/* OFERTA */
+
+.oferta {
+    display: flex;
+    justify-content: center;
+    margin-top: 450px;
+    width: 100%;
+    height: 400px;
+}
+
+.oferta button {
+    margin: 0 0 0 20px;
+}
+
+.img_oferta img {
+    width: 400px;
+    height: 350px;
+}
+
+.oferta h2 {
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.oferta h1 {
+    font-family: "Zilla Slab", serif;
+    font-weight: 200;
+    font-style: normal;
+    margin: -30px 0 0 0;
+    font-size: 120px;
+    text-transform: uppercase;
+}
+
+.oferta .text_sec_oferta {
+    margin: 20px 0 20px 0;
+    text-transform: lowercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+
+}
+
+/* BOTÃO  */
+
+.terrario_butao {
+    background-color: rgba(111, 146, 21, 0.922);
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    border: none;
+    height: 70px;
+    width: 310px;
+    border-radius: 50px;
+    font-size: 25px;
+}
+
+@media screen and (max-width: 767px) {
+
+    header {
+        justify-content: baseline;
+    }
+
+    header ul {
+        display: none;
+    }
+
+    .apresentacao {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 400px;
+    }
+
+    .apresentacao button {
+        margin: 0 0 0 10px;
+    }
+
+    .img_topo img {
+        width: 200px;
+        height: 180px;
+
+
+    }
+
+    .texto_principal {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .texto_principal h2 {
+        font-size: 16px;
+    }
+
+    .texto_principal h1 {
+        margin: 0;
+        font-size: 30px;
+    }
+
+    .texto_principal .text_sec {
+        font-size: 12px;
+
+    }
+
+    .terrario_butao {
+        height: 40px;
+        width: 100px;
+        font-size: 12px;
+    }
+/*COMO MONTAR*/
+    .como_montar {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 400px;
+    }
+    
+    .como_montar h2 {
+        margin: 0 0 0 0;
+        font-size: 30px;
+        text-transform: uppercase;
+        width: 200px;
+    }
+    
+    .como_montar_texto {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 0;
+    }
+    
+    .como_montar h3 {
+        text-transform: uppercase;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 500;
+        font-size: 18px;
+    }
+    
+    .como_montar p {
+        margin: 0px 0 0px 0;
+        font-size: 10px;
+        width: 200px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 40px;
+    }
+    
+    .terrario_butao_montar {
+        margin: 0;
+        height: 40px;
+        width: 140px;
+        font-size: 8px;
+    }
+    
+    .como_montar_texto {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+    }
+    
+    .imagem-como-montar img {
+        margin: 190px 0px 0px 0px;
+        width: 100px;
+        height: 200px;
+    }
+
+/**/
+
+
+.passos {
+    height: 400px;
+    overflow-x: hidden;
+}
+
+.passos_texto {
+    width: 100%;
+    height: 200px;
+    margin-top: 120px;
+}
+.passo img{
+    width: 85px;
+    height: 70px;
+}
+.passo {
+    width: 40px;
+}
+
+.passo h4 {
+    font-size: 12px;
+}
+
+.passo p {
+    margin: 0;
+    font-size: 10px;
+    width: 120px;
+}
+
+/*DEPOIMENTO*/
+
+
+.depoimentos-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.depoimento {
+    box-sizing: border-box;
+    text-align: center;
+    width: auto;
+}
+
+.depoimentos img {
+    width: 100%;
+    width: 100px;
+    height: 120px;
+}
+
+
+button .img_seta {
+    position: absolute;
+    z-index: 1;
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#prev-button {
+    left: 0px;
+}
+
+#next-button {
+    right: 0px;
+}
+
+.depoimento {
+    margin-top: 18em;
+    margin: 0px;
+}
+
+.depoimento h4 {
+    width: 120px;
+    font-size: 12px;
+}
+
+.depoimento p {
+    font-size: 10px;
+    margin: 0px;
+}
+/*OFERTA*/
+
+
+.oferta {
+    display: flex;
+    margin-top: 40px;
+    width: 100%;
+    height: 500px;
+}
+
+.oferta button {
+    margin: 0 0 0 20px;
+}
+
+.img_oferta img {
+    width: 200px;
+    height: 150px;
+}
+
+.oferta h2 {
+    font-size: 12px;
+}
+
+.oferta h1 {
+    margin: 0px 0 0 0;
+    font-size: 20px;
+}
+
+.oferta .text_sec_oferta {
+    margin: 0px 0 00px 0;
+    font-size: 0px;
+
+}
+
+}
