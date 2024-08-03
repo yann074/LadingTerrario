@@ -357,7 +357,7 @@ button .img_seta {
     .img_topo img {
         width: 80%;
         height:80%;
-
+        z-index: 99;
 
     }
 
@@ -436,9 +436,10 @@ button .img_seta {
     }
     
     .imagem-como-montar img {
-        margin: 10% 0px 0px 0px;
+        margin: auto;
         width: 80%;
         height: 400px;
+        z-index: 1;
     }
 
 /**/
@@ -455,8 +456,8 @@ button .img_seta {
     margin-top: 12%;
 }
 .passo img{
-    width: auto;
-    height: auto;
+    width: 80%;
+    height: 80%;
 }
 .passo {
     width: auto;
