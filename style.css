@@ -6,7 +6,7 @@ html {
 
 
 body {
-    box-sizing: content-box;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -20,22 +20,20 @@ a {
 header {
     display: flex;
     justify-content: space-between;
+    padding: 0 20px;
 }
 
-header img {
-    margin-left: 100px;
-}
+
 
 header ul {
     display: flex;
     list-style-type: none;
-    margin-left: 200px;
 }
 
 header li {
     width: 200px;
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 1.2rem;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -44,44 +42,37 @@ header li {
 .apresentacao {
     display: flex;
     justify-content: space-around;
-    width: 100%;
     height: 400px;
-}
-
-.apresentacao button {
-    margin: 0 0 0 20px;
 }
 
 .img_topo {
     margin-right: -10%;
-    width: 200px;
-    height: 200px;
-
-
+    width: auto;
+    height: auto;
 }
 
 .texto_principal {
-    margin: 10px;
+    margin: 0;
 }
 
 .texto_principal h2 {
     text-transform: uppercase;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 500;
-    font-size: 25px;
+    font-size: 1.9rem;
 }
 
 .texto_principal h1 {
     font-family: "Zilla Slab", serif;
     font-weight: 200;
     font-style: normal;
-    margin: -30px;
-    font-size: 120px;
+    margin: -6%;
+    font-size: 7rem;
     text-transform: uppercase;
 }
 
 .texto_principal .text_sec {
-    margin: 20px 0 20px 0;
+    margin: 2% 0 2% 0;
     text-transform: lowercase;
     font-family: cursive;
 
@@ -100,8 +91,8 @@ header li {
     font-family: "Zilla Slab", serif;
     font-weight: 200;
     font-style: normal;
-    margin: -30px 0 0 0;
-    font-size: 72px;
+    margin: -3% 0 0 0;
+    font-size: 5rem;
     text-transform: uppercase;
     width: 600px;
 }
@@ -110,22 +101,22 @@ header li {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-left: 120px;
+    margin-left: 6%;
 }
 
 .como_montar h3 {
     text-transform: uppercase;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 500;
-    font-size: 38px;
+    font-size: 2.5rem;
 }
 
 .como_montar p {
-    margin: 20px 0 20px 0;
-    font-size: 22px;
+    margin: 2% 0 2% 0;
+    font-size: 1.4rem;
     width: 420px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 6%;
 }
 
 .terrario_butao_montar {
@@ -133,25 +124,29 @@ header li {
     font-family: 'Courier New', Courier, monospace;
     color: white;
     border: none;
-    height: 70px;
-    width: 310px;
+    height: 12%;
     border-radius: 50px;
-    font-size: 25px;
+    font-size: 2rem;
 }
 
 .como_montar_texto {
     display: flex;
     flex-direction: column;
-    width: 400px;
+    width: 40%;
+}
+
+.imagem-como-montar {
+    margin: 2% 2% -9% 12%;
+    display: flex;
+    justify-content: center;
 }
 
 .imagem-como-montar img {
-    margin: 200px 200px 200px 200px;
-    width: 350px;
-    height: 450px;
-    transform: scale(1.5);
-    transform-origin: left;
+    width: 90%; 
+    height: 100%;
+    object-fit: cover;
 }
+
 
 /* PASSOS */
 
@@ -159,21 +154,21 @@ header li {
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 650px;
+    height: 690px;
 }
 
 .passos_texto {
     display: flex;
     width: 100%;
-    height: 400px;
-    margin-top: 120px;
+    height: 60%;
+    margin-top: 8%;
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
 }
 
 .passo {
-    width: 200px;
+    width: 20%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -187,15 +182,20 @@ header li {
     font-style: normal;
     margin: 0;
     display: flex;
-    font-size: 30px;
+    font-size: 2.6rem;
     text-transform: uppercase;
 }
 
 .passo p {
-    font-family: cursive;
+    font-family: 'Courier New', Courier, monospace;
     margin: 0;
-    font-size: 18px;
-    width: 260px;
+    font-size: 1.2rem;
+    width: auto;
+}
+
+.passos button{
+    margin-top: 2%;
+    width: 25%;
 }
 
 /* DEPOIMENTOS JS*/
@@ -203,23 +203,28 @@ header li {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    overflow: visible;
+    background-color: rgba(2, 62, 2, 0.689);
+    height: 600px;
 }
 
 .depoimentos-container {
+    margin-top: 470px;
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
 
 .depoimento {
+    width: 90%;
     box-sizing: border-box;
     text-align: center;
 }
 
 .depoimentos img {
     width: 100%;
-    width: 350px;
-    height: 450px;
+    width: 80%;
+    height: 540px;
+    object-fit: cover;
 }
 
 #prev-button,
@@ -233,84 +238,84 @@ header li {
 button .img_seta {
     position: absolute;
     z-index: 1;
-    width: 30px;
-    height: 30px;
+    width: 120px;
+    height: 230px;
     border: none;
     background-color: transparent;
     cursor: pointer;
 }
 
 #prev-button {
-    left: 10px;
+    z-index: 99;
+    margin-top: 41%;
+    transform: rotate(180deg);
 }
 
 #next-button {
-    right: 10px;
+    z-index: 99;
 }
 
-.depoimento {
-    margin-top: 18em;
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-}
+
 
 .depoimento h4 {
-    width: 300px;
+    width: 80%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
+    margin-left: 10%;
+    font-size: 1.2rem;
 }
 
 .depoimento p {
-    font-size: 20px;
-    margin: 20px;
+    margin-right: 10%;
+    font-size: 1.2rem;
     float: right;
+    
 }
 
 .depoimento_2 {
-    margin-top: 40em;
+    margin-top: 20%;
+    
 }
+
 
 /* OFERTA */
 
 .oferta {
     display: flex;
     justify-content: center;
-    margin-top: 450px;
+    margin-top: 8%;
     width: 100%;
-    height: 400px;
+    margin-top: 40%;
+    height: 500px;
 }
 
-.oferta button {
-    margin: 0 0 0 20px;
-}
 
 .img_oferta img {
-    width: 400px;
-    height: 350px;
+    margin-top: 9%;
+    width: auto;
+    height: auto;
 }
 
 .oferta h2 {
     text-transform: uppercase;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 500;
-    font-size: 25px;
+    font-size: 2.3rem;
 }
 
 .oferta h1 {
     font-family: "Zilla Slab", serif;
     font-weight: 200;
     font-style: normal;
-    margin: -30px 0 0 0;
-    font-size: 120px;
+    margin: -3% 0 0 0;
+    font-size: 7.2rem;
     text-transform: uppercase;
 }
 
 .oferta .text_sec_oferta {
-    margin: 20px 0 20px 0;
+    margin: 2% 0 2% 0;
     text-transform: lowercase;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-family: cursive;
+    font-size: 2rem;
 
 }
 
@@ -324,7 +329,7 @@ button .img_seta {
     height: 70px;
     width: 310px;
     border-radius: 50px;
-    font-size: 25px;
+    font-size: 1.6rem;
 }
 
 @media screen and (max-width: 767px) {
