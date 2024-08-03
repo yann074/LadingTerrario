@@ -338,9 +338,19 @@ button .img_seta {
     .terrario_butao button{
         width: auto;
     }
-    header ul {
-        font-size: 0.5rem;
-        display: none;
+    header{
+        flex-direction: column;
+        text-align: center;
+    }
+    header ul{
+        justify-content: center;
+        align-items: center;
+        white-space: nowrap;
+        
+    }
+    header li {
+        font-size: 0.9rem;
+        margin: 0 10% 0 0;
     }
 
     .apresentacao {
@@ -462,9 +472,9 @@ button .img_seta {
     height: 100%;
 }
 
-.passo .passo3{
-    width: 99%;
-    height: 120%;
+.passo2 img{
+    width: 80%;
+    height: 80%
 }
 .passo {
     width: auto;
@@ -518,14 +528,14 @@ button .img_seta {
 
 .botao_dir {
     z-index: 99;
-    margin: -20% 5% 0 0;
+    margin: -20% 7% 0 0;
 
 }
 
 .botao_esq {
     z-index: 99;
     transform: rotate(-180deg);
-    margin: 0 0 32% 5%;
+    margin: 0 0 32% 7%;
 }
 
 
