@@ -488,13 +488,12 @@ button .img_seta {
 /*DEPOIMENTO*/
 
 .depoimentos {
-    width: auto;
-    overflow-x: hidden;
-    display: none;
+    width: 100%;
+    height: 250px;
 }
 
 .depoimentos-container {
-    margin-top: 90%;
+    margin-top: 80%;
     gap: 4%;
 }
 
@@ -505,15 +504,7 @@ button .img_seta {
 .depoimentos img {
     
     width: 100px;
-    height: 140px;
-}
-
-#prev-button,
-#next-button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-
+    height: 170px;
 }
 
 button .img_seta {
@@ -525,14 +516,16 @@ button .img_seta {
     cursor: pointer;
 }
 
-#prev-button {
+.botao_dir {
     z-index: 99;
-    margin-top: 20%;
-    transform: rotate(-180deg);
+    margin: -20% 5% 0 0;
+
 }
 
-#next-button {
+.botao_esq {
     z-index: 99;
+    transform: rotate(-180deg);
+    margin: 0 0 32% 5%;
 }
 
 
@@ -558,10 +551,10 @@ button .img_seta {
 .oferta {
     overflow-x: hidden;
     width: 100%;
-    height: 300px;
+    height: 350px;
 }
 .inf_oferta{
-    margin: 32% 0 20% 0;
+    margin: 40% 0 10% 0;
     display: flex;
 }
 
